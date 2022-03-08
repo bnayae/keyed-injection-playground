@@ -1,4 +1,4 @@
-﻿namespace Bnaya.Samples
+﻿namespace Microsoft.Extensions.DependencyInjection
 {
     public interface IKeyed<T>  where T : class
     {
