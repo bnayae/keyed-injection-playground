@@ -1,6 +1,6 @@
 ﻿namespace Microsoft.Extensions.DependencyInjection
 {
-    public class KeyedSelector<T>: IKeyedSelector<T> where T : class
+    internal class KeyedSelector<T>: IKeyedSelector<T> where T : class
     {
         private readonly IServiceProvider _serviceProvider;
 

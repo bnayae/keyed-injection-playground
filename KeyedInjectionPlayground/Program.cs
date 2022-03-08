@@ -14,8 +14,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddKeyedSingleton<IFunctionality, AFunctionality>("A");
 builder.Services.AddKeyedSingleton<IFunctionality, BFunctionality>("B");
 builder.Services.AddSingleton<IList<int>>(new List<int> { 1, 2, 3});
-builder.Services.AddSingleton<IList<int>>(new List<int> { 1, 2, 3});
-builder.Services.AddSingleton<IKeyedSelector<IList<int>>>(sp => new KeyedSelector<IList<int>>(sp));
+
 
 var app = builder.Build();
 
